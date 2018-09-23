@@ -1,12 +1,38 @@
 <mat-toolbar color="primary" class="nav">
   <mat-toolbar-row class="nav-row">
-    <button mat-button [routerLink]="['./']" layout-align="end center" class="nav-link nav-logo">
+    <button mat-button
+      [routerLink]="['/']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="nav-link nav-logo"
+      layout-align="end center">
       <span class="nav-logo-text">COMMaS</span>
     </button>
-    <button mat-button [routerLink]="['./projects']" class="nav-link">PROJECTS</button>
-    <button mat-button [routerLink]="['./about']" class="nav-link">ABOUT</button>
-    <button mat-button [routerLink]="['./resume']" class="nav-link">RESUME</button>
-    <button mat-button [routerLink]="['./contact']" class="nav-link">CONTACT</button>
+    <button mat-button
+      [routerLink]="['/projects']"
+      routerLinkActive="active"
+      class="nav-link">
+      PROJECTS
+    </button>
+    <button mat-button
+      [routerLink]="['/about']"
+      routerLinkActive="active"
+      class="nav-link">
+      ABOUT
+    </button>
+    <button
+      mat-button
+      [routerLink]="['/resume']"
+      routerLinkActive="active"
+      class="nav-link">
+      RESUME
+    </button>
+    <button mat-button
+      [routerLink]="['/contact']"
+      routerLinkActive="active"
+      class="nav-link">
+      CONTACT
+    </button>
     <span class="nav-spacer"></span>
     <!-- <app-login style="height: 100%;"></app-login> -->
     <!-- <button mat-button class="nav-link nav-login">LOG-IN / SIGN-UP</button> -->
